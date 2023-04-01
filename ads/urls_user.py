@@ -5,6 +5,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from ads.views import UserCreateView, UserListView, UserDetailView, UserUpdateView, Logout
 
+
 urlpatterns = [
     path('', UserListView.as_view()),
     path('<int:pk>/', UserDetailView.as_view()),
